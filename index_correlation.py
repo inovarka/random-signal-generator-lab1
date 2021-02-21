@@ -7,8 +7,8 @@ harmonics_count = 8
 frequency = 1500
 N = 1024
 
-signal = rsg.generateSignal(harmonics_count,frequency,N)
-signal_copy = rsg.generateSignal(harmonics_count,frequency,N)
+signal,_ = rsg.generateSignal(harmonics_count,frequency,N)
+signal_copy,_ = rsg.generateSignal(harmonics_count,frequency,N)
 
 fig1, ax1 = plt.subplots()
 fig1.set_size_inches(10,4)
